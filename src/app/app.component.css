@@ -1,0 +1,10 @@
+.red {
+  color: red;
+}
+.bg-blue {
+  background: blue;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}

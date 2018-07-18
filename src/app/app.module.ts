@@ -1,10 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {AppRoutingModule} from "./app.routing.module";
 import {MenuModule} from "./components/menu/menu.module";
 import {HttpClientModule} from "@angular/common/http";
+import {CommentsDataService} from "./service/comments-data.service";
+import {CommentsService} from "./service/comments.service";
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import {HttpClientModule} from "@angular/common/http";
     MenuModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CommentsDataService, CommentsService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

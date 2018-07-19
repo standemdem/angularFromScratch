@@ -1,0 +1,9 @@
+.comment-body {
+  background: aqua;
+  margin-bottom: 15px;
+}
+
+.comment-id {
+  height: 15px;
+  background: yellowgreen;
+}

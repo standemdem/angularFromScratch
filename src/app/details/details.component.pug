@@ -1,0 +1,6 @@
+p details works
+p il y a {{size}} commentaires
+ng-container(*ngFor="let comment of comments")
+  app-comment([comment] = "comment", (action)="abuse($event)")
+
+
